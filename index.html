@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>English Quiz - Duolingo Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+  <h1>English Converstation Quiz</h1>
+  <div>
+    <button onclick="toggleVerbList('regular')">Regular Verbs</button>
+    <button onclick="toggleVerbList('irregular')">Irregular Verbs</button>
+    <button class="start-btn" onclick="alert('Name: Muhamad Adidtia'+ '\nEmail: kittokaito12@gmail.com'+ '\nNo Hp: +62 891-1293-2987')">Contact Person</button>
+  </div>
+</nav>
+
+<div id="regular-verbs" style="display: none; padding: 1rem 2rem;">
+  <h3>Regular Verbs</h3>
+  <ul>
+    <li>play – played – played</li>
+    <li>walk – walked – walked</li>
+    <li>clean – cleaned – cleaned</li>
+    <li>cook – cooked – cooked</li>
+    <!-- Tambahkan sesuai kebutuhan -->
+  </ul>
+</div>
+
+<div id="irregular-verbs" style="display: none; padding: 1rem 2rem;">
+  <h3>Irregular Verbs</h3>
+  <ul>
+    <li>go – went – gone</li>
+    <li>eat – ate – eaten</li>
+    <li>see – saw – seen</li>
+    <li>write – wrote – written</li>
+    <!-- Tambahkan sesuai kebutuhan -->
+  </ul>
+</div>
+
+
+
+  <header class="hero">
+    <h2>Learning Indonesia to English Converstation Made Easy</h2>
+    <p>Daily vocabulary practice, in English.</p>
+    <label for="difficulty">Select Difficulty Level:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select><br>
+    <button id="hero-start-btn">Play Quiz</button>
+  </header>
+
+  <main id="quiz-section" style="display: none;">
+    <div class="progress">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div id="timer"></div>
+    <section id="quiz-container"></section>
+  </main>
+
+  <div id="score-section" style="display: none;">
+    <h2 id="score-text"></h2>
+    <button id="restart-btn">Restart</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Kaito Cihuyyy. Dibuat dengan ❤️</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
